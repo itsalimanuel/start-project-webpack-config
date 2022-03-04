@@ -1,0 +1,20 @@
+block variables
+doctype doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Ali Website
+        meta(name="description" content="Website Description here")
+
+        link( href="main.css" ,rel="stylesheet")
+
+
+    body
+     include ./componenets/preloader
+     include ./componenets/navbar
+
+     .content#content(data-template=template)
+       block content
+
+    script(src="main.js") 

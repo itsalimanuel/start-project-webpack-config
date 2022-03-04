@@ -1,0 +1,22 @@
+// ulits
+@import './ulits/respons';
+@import './ulits/fonts';
+
+// componenets
+
+@import './componenets/navbar';
+@import './componenets/preloader';
+
+//pages
+
+@import './pages/home';
+@import './pages/cases';
+@import './pages/detail';
+@import './pages/about';
+
+body{
+  margin: 0;
+//   background-color: rebeccapurple;
+  padding: 0;
+  overflow-x: hidden;
+}

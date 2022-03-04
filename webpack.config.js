@@ -7,6 +7,7 @@ const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
+// const IS_DEVELOPMENT = process.env.NODE_ENV === 'dev'
 const IS_DEVELOPMENT = process.env.NODE_ENV === 'dev'
 
 const dirApp = path.join(__dirname, 'app')
@@ -36,7 +37,7 @@ module.exports = {
       ]
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].[hash].css',
+      filename: '[name].css',
       chunkFilename: '[id].css'
     }),
     new HtmlWebpackPlugin({

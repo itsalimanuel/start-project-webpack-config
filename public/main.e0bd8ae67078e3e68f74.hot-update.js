@@ -1,0 +1,1 @@
+"use strict";self.webpackHotUpdatevicocss("main",{},(function(c){c.h=()=>"99727e72032b4f0f4b14"}));

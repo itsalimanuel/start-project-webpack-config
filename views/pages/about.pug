@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+extends ../base.pug
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
 
-<body>
-    about
-</body>
+block variables
+  - var template  = 'about'
 
-</html>
+block content
+    #about.about 
+      h1.about_title Hello About Page
+      h3.about_sub_title Hello Sub title
+      img(src="https://cdn-icons-png.flaticon.com/512/2301/2301826.png", alt="")

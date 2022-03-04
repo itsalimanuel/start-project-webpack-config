@@ -1,0 +1,31 @@
+.navbar{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: green;
+    &_list{
+        position:relative;
+        height: 46px;
+        padding:10px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_brand{
+        position: relative;
+        width: 40px;
+        height:40px;
+        img{
+            width: 100%;
+        }
+    }
+    &_wrapper{
+        a{
+            text-decoration: none;
+            color: #fff;
+            margin-left: 10px;
+        }
+    }
+}

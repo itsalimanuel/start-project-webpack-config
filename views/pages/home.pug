@@ -1,6 +1,41 @@
-doctype doctype
-html(lang='en')
-    head
-        meta(charset='utf-8')
-        title Ali Website
-    body
+extends ../base.pug
+
+block variables
+  - var template = 'home'
+
+block content
+    #home.home 
+      .home_wrapper 
+        .home_image 
+          img(data-src="https://github.com/itsalimanuel/start-project-webpack-config/blob/main/app/images/Gallery/5.png", alt="")
+        .home_image 
+          img(data-src="../../../images/Gallery/1.png", alt="")
+        .home_image 
+          img(data-src="../../../images/Gallery/1.png", alt="")
+          .home_image 
+          img(data-src="../../../images/Gallery/1.png", alt="")
+          .home_image 
+          img(data-src="../../../images/Gallery/1.png", alt="")
+          .home_image 
+          img(data-src="../../../images/Gallery/1.png", alt="")
+          .home_image 
+          img(data-src="../../../images/Gallery/1.png", alt="")
+          .home_image 
+          img(data-src="../../../images/Gallery/1.png", alt="")
+          .home_image 
+          img(data-src="../../../images/Gallery/1.png", alt="")
+          .home_image 
+          img(data-src="../../../images/Gallery/1.png", alt="")
+          .home_image 
+          img(data-src="../../../images/Gallery/1.png", alt="")
+          .home_image 
+          img(data-src="../../../images/Gallery/1.png", alt="")
+          .home_image 
+          img(data-src="../../../images/Gallery/1.png", alt="")
+          .home_image 
+          img(data-src="../../../images/Gallery/1.png", alt="")
+
+      h1.home_title Hello detail Page
+      h3.home_sub_title Hello Sub title
+      a.home_button(href="#") enter
+      
