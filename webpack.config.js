@@ -15,8 +15,9 @@ const dirStyles = path.join(__dirname, 'styles')
 const dirShared = path.join(__dirname, 'shared')
 const dirNode = 'node_modules'
 module.exports = {
-  entry: [path.join(dirApp, 'index.js'), path.join(dirStyles, 'index.scss')],
+  entry: [path.join(dirApp, 'index.js'), path.join(dirApp, 'webgl.js'), path.join(dirStyles, 'index.scss')],
   output: {
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
   resolve: {
@@ -68,6 +69,13 @@ module.exports = {
             presets: ['@babel/preset-env', '@babel/preset-react']
           }
         }
+      },
+      {
+        test: /\.js$/,
+        loader: 'eslint-loader',
+        include: [
+          path.resolve(__dirname, 'dev')
+        ]
       },
       {
         test: /\.scss$/,
